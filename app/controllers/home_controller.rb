@@ -6,7 +6,7 @@ class HomeController < ApplicationController
 
   def sneaker
     #タグからひっぱてくる
-    @sneaker = Instagram.tag_recent_media(URI.encode("sneaker"), {:count => 50})
+    @sneaker = Instagram.tag_recent_media(URI.encode("スニーカー"), {:count => 50})
   end
 
   def hairarrange
@@ -16,11 +16,11 @@ class HomeController < ApplicationController
 
   def nail
     #タグからひっぱてくる
-    @nail = Instagram.tag_recent_media(URI.encode("nail"), {:count => 50})
+    @nail = Instagram.tag_recent_media(URI.encode("ネイル"), {:count => 50})
   end
 
   def makeup
     #タグからひっぱてくる
-    @makeup = Instagram.tag_recent_media(URI.encode("makeup"), {:count => 50})
+    @makeup = Instagram.tag_recent_media(URI.encode("メイク"), {:count => 50})
   end
 end
