@@ -7,8 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div="container">
+
+<div class="btn-group btn-group-justified">
+  <%= link_to 'コーデ', root_path, class: :"btn btn-warning" %>
+  <%= link_to 'スニーカー', home_sneaker_path, class: :"btn btn-primary" %>
+  <%= link_to 'ヘアアレンジ', home_hairarrange_path, class: :"btn btn-success" %>
+  <%= link_to 'ネイル', home_nail_path, class: :"btn btn-info" %>
+  <%= link_to 'メイク', home_makeup_path, class: :"btn btn-danger" %>
+</div>
 
 <%= yield %>
-
+</div>
 </body>
 </html>

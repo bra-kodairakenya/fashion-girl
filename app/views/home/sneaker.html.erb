@@ -1,0 +1,7 @@
+<h1>Sneaker</h1>
+
+<% @sneaker.each do |sneaker| %>
+  <%= link_to sneaker.link, :target => "_blank" do %>
+    <%= image_tag(sneaker.images.low_resolution.url) %>
+  <% end %>
+<% end %>

@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  root 'home#coordinate'
+  get 'home/sneaker'
+  get 'home/hairarrange'
+  get 'home/nail'
+  get 'home/makeup'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

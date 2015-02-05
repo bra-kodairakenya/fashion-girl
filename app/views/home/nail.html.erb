@@ -1,0 +1,7 @@
+<h1>Nail</h1>
+
+<% @nail.each do |nail| %>
+  <%= link_to nail.link, :target => "_blank" do %>
+    <%= image_tag(nail.images.low_resolution.url) %>
+  <% end %>
+<% end %>

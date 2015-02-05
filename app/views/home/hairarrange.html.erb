@@ -1,0 +1,7 @@
+<h1>HairArrange</h1>
+
+<% @hairarrange.each do |hairarrange| %>
+  <%= link_to hairarrange.link, :target => "_blank" do %>
+    <%= image_tag(hairarrange.images.low_resolution.url) %>
+  <% end %>
+<% end %>

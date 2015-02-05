@@ -1,0 +1,7 @@
+<h1>Makeup</h1>
+
+<% @makeup.each do |makeup| %>
+  <%= link_to makeup.link, :target => "_blank" do %>
+    <%= image_tag(makeup.images.low_resolution.url) %>
+  <% end %>
+<% end %>

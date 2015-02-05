@@ -1,0 +1,7 @@
+<h1>Coordinate</h1>
+
+<% @coordinate.each do |coordinate| %>
+  <%= link_to coordinate.link, :target => "_blank" do %>
+    <%= image_tag(coordinate.images.low_resolution.url) %>
+  <% end %>
+<% end %>
